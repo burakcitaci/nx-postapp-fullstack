@@ -1,0 +1,16 @@
+<div style="text-align: center">
+    <h1>Welcome to postapp-angular-frontend!</h1>
+    <img
+      width="50"
+      height="25"
+      src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
+      alt="Nx - Smart, Extensible Build Framework"
+    />
+  </div>
+  
+  <div class="col-md-12" style="width: 100%;" *ngFor="let post of posts;"> 
+    <nx-postapp-fullstack-post [currentPost]="post" (cardClickedEvent)="cardClicked($event)"></nx-postapp-fullstack-post>
+  </div>
+  
+  <div>Message: {{ hello$ | async | json }}</div>
+  

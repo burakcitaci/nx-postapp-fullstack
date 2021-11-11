@@ -17,7 +17,8 @@
     "paths": {
       "@nx-postapp-fullstack/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
-      ]
+      ],
+      "@nx-postapp-fullstack/db-helper": ["libs/db-helper/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
